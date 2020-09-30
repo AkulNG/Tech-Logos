@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Apple logo design using html and css</title>
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                background:#000;
+            }
+		.apple-logo{
+                left:50%;
+                top:50%;
+		position:absolute;
+        	transform:translate(-50%, -50%); 
+                background-color:#c6c6c6;
+            	width:208px;
+            	height:198px;
+            	border-radius:35% 35% 41% 41%/ 42% 42% 75% 75%;
+		shadow: 2px 2px #FF0000;
+            }
+		.apple-logo:before{
+		background-color:#c6c6c6;
+		content:"";
+		width:55px;	
+		height:55px;
+		position:absolute;
+		margin: -51px 0 0 100px;
+		border-radius:100px 0 ;
+		z-index: 5;
+	    }
+		.apple-logo:after{
+		background:#000;
+		content:"";
+		width:90px;
+		height:90px;
+		position:absolute;
+		margin:28px 0 0 174px;
+		border-radius:50%;
+		z-index:4;
+		box-shadow: -127px -109.5px 0 #000,
+		            -118px -107px 0 #000,
+			    -115.5px -102.5px 0 #000,
+			    -105.5px -109.5px 0 #000,
+                            -129px 166px 0 #000,
+                            -107.5px 166px 0 #000,
+                            -119px 161px 0 #000;
+	    }       
+		.google-logo{
+		width:150px;
+		height:150px;
+		top:800px;
+		left:50%;
+		position:absolute;
+		transform:translate(-50%,-50%);
+		border-radius:50%;
+		border-top:50px solid #ea4335;
+		border-right:50px solid #4285f4;
+		border-bottom:50px solid #34a853;
+		border-left:50px solid #fbb606;
+	    }
+		.google-logo:before{
+		content:"";
+		position:absolute;
+		left:71px;
+		top:-121px;
+		border-top:100px solid transparent;
+		border-right:100px solid black;
+		border-bottom:100px solid transparent;
+		border-left:100px solid transparent;
+		transform:rotate(90deg);
+	    }
+		.google-logo:after{
+		content:"";
+		position:absolute;
+		top:55%;
+		right:-49.5px;
+		width:100px;
+		height:50px;
+		background:#4285f4;
+		transform:translate(0, -41px);
+	    }
+		.microsoft-logo {
+    		background-color: #f25022;
+    		box-shadow: 
+      	        105px 0 0 0 #34a853, 
+                0 105px 0 0 #00a4ef, 
+                105px 105px 0 0 #ffb900;
+   		height: 100px;
+    		width: 100px;
+	    }	
+		.container2{
+		padding-top:1200px;
+		padding-bottom:70px;
+		padding-left:42%;
+		margin-bottom:70px;
+	    }
+	
+        </style>
+    </head>
+    <body>
+
+<div class="apple-logo"></div>
+<span class="apple-text;" style="color:#c6c6c6; font-size:3rem; display:block; margin-left:42%; top:50px;" >Tech logos</span>
+<div class="container" ><div class="google-logo"></div></div>
+<div class="container2"><div class="microsoft-logo"></div></div>   
+
+ </body>
+</html>
